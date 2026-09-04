@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="navbar">
+      <a href="index.html" class="brand">
+      <span class="brand-mark">YN</span>
+      <span class="brand-name">Your Name</span>
+    </a>
+      <nav class="main-nav">
+      <a href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9a1 1 0 0 0 1 1H9a1 1 0 0 0 1-1v-4h4v4a1 1 0 0 0 1 1h2.5a1 1 0 0 0 1-1v-9"/></svg><span>Home</span></a>
+      <a href="about.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1.2-3.6 4-5.5 7-5.5s5.8 1.9 7 5.5"/></svg><span>About</span></a>
+      <a href="work.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="7.5" width="17" height="11" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/><path d="M3.5 12.5h17"/></svg><span>Work</span></a>
+      <a href="blog.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1Z"/><path d="M13.5 3.5v4h4"/><path d="M8.5 13h7M8.5 16.5h5"/></svg><span>Blog</span></a>
+      <a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 6.5l8 6.5 8-6.5"/></svg><span>Contact</span></a>
+    </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Say hello</a>
+        <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-backdrop" data-close></div>
+  <div class="mobile-menu-panel">
+    <div class="mobile-menu-top">
+      <button class="mobile-menu-close" aria-label="Close menu" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="mobile-menu-avatar">YN</div>
+      <div class="mobile-menu-name">Your Name</div>
+      <div class="mobile-menu-tagline">Developer &amp; Designer</div>
+    </div>
+    <div class="mobile-menu-body">
+      <p class="mobile-menu-label">Navigate</p>
+      <a href="index.html" class="mobile-menu-link" data-close>
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9a1 1 0 0 0 1 1H9a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h2.5a1 1 0 0 0 1-1v-9"/></svg></span> Home
+      </a>
+      <a href="about.html" class="mobile-menu-link active" data-close>
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.3"/><path d="M5 19.5c1.2-3.2 4-5 7-5s5.8 1.8 7 5"/></svg></span> About
+      </a>
+      <a href="work.html" class="mobile-menu-link" data-close>
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="11.5" rx="2"/><path d="M8 7.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1.5"/><path d="M3 12.5h18"/></svg></span> Work
+      </a>
+      <a href="blog.html" class="mobile-menu-link" data-close>
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2 2 0 0 1 6 3.5h5V19H6a2 2 0 0 0-2 2V5.5Z"/><path d="M20 5.5A2 2 0 0 0 18 3.5h-5V19h5a2 2 0 0 1 2 2V5.5Z"/></svg></span> Blog
+      </a>
+      <a href="contact.html" class="mobile-menu-link" data-close>
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span> Contact
+      </a>
+      <div class="mobile-menu-divider"></div>
+      <p class="mobile-menu-label">Connect</p>
+      <a href="https://github.com" target="_blank" rel="noopener" class="mobile-menu-link">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span> GitHub
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="mobile-menu-link">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span> LinkedIn
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener" class="mobile-menu-link">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span> Twitter
+      </a>
+      <a href="https://read.cv" target="_blank" rel="noopener" class="mobile-menu-link">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg></span> Read.cv
+      </a>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn btn-primary" data-close>Say hello</a>
+      <a href="mailto:hello@yourdomain.com" class="btn btn-secondary">Email me</a>
+    </div>
+  </div>
+</div>
+<main>
+  <div class="container page-hero">
+    <div class="band"></div>
+    <div class="card">
+      <div class="about-header">
+        <div class="about-photo">YN</div>
+        <div>
+          <h1 style="margin-bottom:2px; font-size:1.9rem;">Your Name</h1>
+          <p class="about-role">Developer &amp; Designer</p>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p>Replace this with a short bio that tells visitors who you are, what you care about, and the kind of work you love. Keep it warm and specific to you.</p>
+        <p>I started out building marketing sites in a small agency, then fell in love with design systems and the craft of component libraries. These days I lead frontend work at Northwind Studio, where I get to balance hands-on coding with mentoring a growing team.</p>
+        <p>Outside of work you'll find me sketching letterforms, over-engineering my coffee setup, or exploring Lisbon on a slow weekend run.</p>
+
+        <h3>Toolkit</h3>
+        <div class="tag-row">
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Design Systems</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Accessibility</span>
+          <span class="tag">Motion</span>
+          <span class="tag">Rust</span>
+          <span class="tag">Figma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-copy">© 2026 Your Name. Made with care.</span>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://read.cv" target="_blank" rel="noopener">Read.cv</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
